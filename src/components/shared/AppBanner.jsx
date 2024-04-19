@@ -46,7 +46,7 @@ const AppBanner = ({activeTheme, setTheme}) => {
 				>
 					<TypeAnimation
 						sequence={[
-							'A Full-Stack JS Developer & Game Dev Enthusiast',
+							'Big Data Analyst',
 							1000,
 						]}
 						wrapper="span"

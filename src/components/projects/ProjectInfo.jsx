@@ -134,6 +134,24 @@ const ProjectInfo = () => {
 					);
 				})}
 
+				{onlyCurrentProject.ProjectInfo.Results && 
+					<div className='mt-10'>
+						<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-3">
+							Results
+						</p>
+						{onlyCurrentProject.ProjectInfo.Results.map((ins) => {
+							return (
+								<p
+									key={ins.id}
+									className="font-general-regular text-lg text-ternary-dark dark:text-ternary-light textJustify"
+								>
+									{ins.details}
+								</p>
+							);
+						})}
+					</div>
+				}
+
 				{onlyCurrentProject.ProjectInfo.Conclusion && 
 					<div className='mt-10'>
 						<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-3">

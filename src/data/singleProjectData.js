@@ -7,12 +7,6 @@ import CVL5 from '../images/cloudvslocal5.png';
 import CVL6 from '../images/cloudvslocal6.png';
 import CVL7 from '../images/cloudvslocal7.png';
 import CVL8 from '../images/cloudvslocal8.jpg';
-import Clustering2 from '../images/Clustering2.png';
-import Clustering3 from '../images/Clustering3.png';
-import Clustering4 from '../images/Clustering4.png';
-import KNN2 from '../images/KNN2.png';
-import KNN3 from '../images/KNN3.png';
-import KNN4 from '../images/KNN4.png';
 // Import icons
 import {
 	FiLinkedin,
@@ -92,56 +86,34 @@ let singleProjectRawData = [
 				{id: 5, details: 'Model Building and Evaluation: Each platform runs the decision tree algorithm, with performance metrics evaluated to assess model effectiveness in classifying and predicting outcomes.'},
 				{id: 6, details: 'Resource Utilization and Cost Analysis: The study examines CPU and memory usage across platforms to determine the most cost-effective solution while considering scalability and computational demands.'}
 			],
-			Conclusion: [
-				{id: 1, details: 'The project aims to highlight the advantages and potential limitations of cloud-based machine learning solutions compared to traditional local computing, providing insights into scalability, cost, and performance efficiency. This information is crucial for organizations considering the transition to cloud platforms for their machine learning tasks.'},
+			Results:[
+				{id:0, details:'-------------------------------------'},
+				{id:1, details:'AWS Amazon Web Services'},
+				{id:1, details:'-------------------------------------'},
+				{id:2, details:'Confusion Matrix: High number of true negatives (TN) at 925, but relatively low true positives (TP) at 9.'},
+				{id:3, details:'Precision for class 1 (positive class) is very low at 0.20.'},
+				{id:4, details:'Recall for class 1 is also low at 0.15, meaning the model has low sensitivity.'},
+				{id:5, details:'AUC is 0.554, which is close to 0.5, indicating poor performance in distinguishing between classes.'},
+				{id:6, details:'Very low memory usage and CPU usage, which is beneficial for cost.'},
+				{id:7, details:'-------------------------------------'},
+				{id:8, details:'Azure'},
+				{id:9, details:'-------------------------------------'},
+				{id:10, details:'Confusion Matrix: Similar to AWS and Local, but with a slight increase in TP at 10.'},
+				{id:11, details:'Precision for class 1 is the highest among the three at 0.21.'},
+				{id:12, details:'Recall for class 1 is also the highest at 0.16.'},
+				{id:13, details:'AUC is 0.561, slightly better than AWS and Local.'},
+				{id:14, details:'Memory usage is still very low, and CPU usage during training and prediction is in between AWS and Local.'},
+				{id:15, details:'-------------------------------------'},
+				{id:16, details:'Local Machine'},
+				{id:17, details:'-------------------------------------'},
+				{id:18, details:'Confusion Matrix: Similar pattern to AWS, with a high number of TN at 924 but low TP at 8.'},
+				{id:19, details:'Precision for class 1 is slightly lower than AWS at 0.18.'},
+				{id:20, details:'Recall for class 1 is the lowest among the three at 0.13.'},
+				{id:21, details:'AUC is 0.546, again indicating poor performance.'},
+				{id:22, details:'Memory usage during training is higher, and CPU usage is significantly lower during prediction.'},
 			],
-		}
-	},
-	
-	{
-		id:[105,106],
-		ProjectHeader: {title: 'K Means Clustering', publishDate: 'June 25, 2020', tags: 'AI - Problem Solving'},
-		ProjectImages: [
-			{id: 1, title: 'K Means Clustering', img: Clustering2},
-			{id: 2, title: 'K Means Clustering', img: Clustering3},
-			{id: 3, title: 'K Means Clustering', img: Clustering4},
-		],
-		ProjectInfo: {
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails: 'To implement K-Means Clustering Algorithm and visualize using graph',
-			CodeUrlHeading: "Code",
-			codeUrl: "https://github.com/M-Adil-AS/K-Means-Cluster",
-			demoUrlHeading: "Demo",
-			demoUrl: "https://m-adil-as.github.io/K-Means-Cluster/",
-			Technologies: [{title: 'Tools & Technologies', techs: ['HTML', 'CSS', 'JavaScript', 'Chart.JS']}],
-			ProjectDetailsHeading: 'Description',
-			ProjectDetails: [
-				{id: 1, details: 'An unsupervised machine learning classification algorithm implemented in JavaScript.'},
-				{id: 2, details: 'Chart.js is used to visualize how K-Means algorithm works. In this project, data points have two features RGB and WGB which relate to the medical data of patients. After the algorithm has finished executing, patients are divided into different groups based on clusters.'},
-			]
-		}
-	},
-
-	{ 
-		id:[107,108],
-		ProjectHeader: {title: 'K Nearest Neighbor', publishDate: 'June 19, 2020', tags: 'AI - Problem Solving'},
-		ProjectImages: [
-			{id: 1, title: 'K Nearest Neighbor', img: KNN2},
-			{id: 2, title: 'K Nearest Neighbor', img: KNN3},
-			{id: 3, title: 'K Nearest Neighbor', img: KNN4},
-		],
-		ProjectInfo: {
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails: 'To implement K-Nearest Neighbor Algorithm and visualize using graph',
-			CodeUrlHeading: "Code",
-			codeUrl: "https://github.com/M-Adil-AS/K-Nearest-Neighbor",
-			demoUrlHeading: "Demo",
-			demoUrl: "https://m-adil-as.github.io/K-Nearest-Neighbor",
-			Technologies: [{title: 'Tools & Technologies', techs: ['HTML', 'CSS', 'JavaScript', 'Chart.JS']}],
-			ProjectDetailsHeading: 'Description',
-			ProjectDetails: [
-				{id: 1, details: 'A supervised machine learning classification algorithm implemented in JavaScript.'},
-				{id: 2, details: 'Chart.js is used to visualize how K-Nearest Neighbor algorithm works. In this project, data points have two features Humidity and Pressure which relate to the history of weather. The algorithm makes a prediction whether it will rain or not based on the input test data.'},
+			Conclusion: [
+				{id: 1, details: 'Considering the performance metrics, Azure leads with a modest advantage in effectively classifying the positive class and distinguishing between the classes. When factoring in the cost-effectiveness, AWS appears more economical due to its lower resource consumption. For scalability, both AWS and Azure provide superior options over a local setup, with the ability to adapt to increased computational demands. The choice between AWS and Azure would depend on the specific requirements of cost efficiency versus performance.'},
 			],
 		}
 	},
