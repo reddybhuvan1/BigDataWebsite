@@ -122,7 +122,7 @@ let singleProjectRawData = [
 		}
 	},
 
-	{
+	{ 
 		id:[107,108],
 		ProjectHeader: {title: 'K Nearest Neighbor', publishDate: 'June 19, 2020', tags: 'AI - Problem Solving'},
 		ProjectImages: [

@@ -7,6 +7,17 @@ const ProjectSingleHeader = () => {
 
 	return (
 		<div>
+			
+				{onlyCurrentProject.ProjectHeader.title=="Comparative Performance Evaluation of Machine Learning Model on Cloud vs Local Machine"
+				?<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
+			A Project by Bhuvan and Ram Charan
+			</p>
+			:<></>}
+
+				
+			
+			
+
 			<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
 				{onlyCurrentProject.ProjectHeader.title}
 			</p>
